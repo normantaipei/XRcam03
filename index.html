@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+  <meta name="viewport" content="height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+
+    <title>XRcam_project</title>
+  </head>
+  <body bgcolor="black">
+
+        <!--<img src="top02.png" alt="red ball"style="width:100%">-->
+
+        <style>
+        .alert {
+          padding: 50px;
+          background-color: gray;
+          color: white;
+          font-size: 30px;
+          position: fixed;
+        left: 0%;
+        top: 30%;
+        z-index:2;
+        }
+
+        .closebtn {
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 80px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .closebtn:hover {
+          color: black;
+        }
+        </style>
+        <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          This website is constructed  and maintained  by RWD and is accessible  to anyone.<br /><br />
+          (The anime may take a few minutes to load.)
+        </div>
+
+
+<style type="text/css">
+#TOP{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index:-1;
+}
+#NAME{
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-style:italic;
+  font-size:  3vw;
+  top:-2vw;
+  left:40%;
+  width:30%;
+  z-index:0;
+  align-items: center;
+}
+#BG{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:75%;
+    z-index:-2;
+}
+#FB{
+    position:absolute;
+    top:1vw;
+    left:88%;
+    width:5%;
+    z-index:1;
+}
+#IG{
+    position:absolute;
+    top:1vw;
+    left:93%;
+    width:5%;
+    z-index:1;
+}
+
+#anime{
+  position:absolute;
+  width: 27%;
+  z-index:0;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count:infinite;
+  overflow-x: hidden;
+}
+@keyframes slidein {
+  0% {
+    left: 38%;
+  }
+
+50% {
+    left: 67%;
+  }
+  100% {
+    left: 38%;
+  }
+}
+
+
+</style>
+<div style="position:relative;">
+<img src="top04.png" id="TOP">
+<p id="NAME">Norman Hsiao</p>
+<img src="BG01.png" id="BG">
+<img src="anime05.png" id="anime">
+<a href="https://www.facebook.com/norman.hsiao.1" target="_blank"><img src="FB.png" id="FB"></a>
+<a href="https://www.instagram.com/norman_filmmaker/" target="_blank"><img src="IG.png" id="IG"></a>
+</div>
+
+<style type="text/css">
+#BG{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:75%;
+    z-index:-2;
+}
+#title {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  4vw;
+  top:6vw;
+  left:2%;
+  width:80%;
+  z-index:0;
+  align-items: center;
+}
+#why {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  2vw;
+  top:15vw;
+  left:7%;
+  width:55%;
+  z-index:0;
+  align-items: center;
+}
+#dance {
+  position:absolute;
+  top:0.1vw;
+  left:40%;
+  width:60%;
+  z-index:-3;
+  align-items: center;
+}
+#anime02{
+  position:absolute;
+  width: 27%;
+  z-index:0;
+  left: 10%;
+  animation-duration: 4s;
+  animation-name: slidein02;
+  animation-iteration-count:infinite;
+  overflow-x: hidden;
+}
+@keyframes slidein02 {
+  0% {
+    top:30vw;
+  }
+
+50% {
+    top:33vw;
+  }
+  100% {
+    top:30vw;
+  }
+}
+
+</style>
+<div style="position:relative;">
+<img src="BG01.png" id="BG">
+<p id="title">Pro virtual camera</p>
+<p id="why">  is a project that I have been working on , I have this idea since I watching on some Vtuber's LIVE show.</p>
+<video loop="true" autoplay="autoplay"  muted="true" id="dance">
+         <source type="video/mp4" src="LIVE01.mp4"></source>
+</video>
+<img src="arror02.png" id="anime02">
+</div>
+<style type="text/css">
+#BG02{
+    position:absolute;
+    top:45.2vw;
+    left:54%;
+    width:46%;
+    z-index:-2;
+}
+#title02 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:3vw;
+  top:52vw;
+  left:71%;
+  width:20%;
+  z-index:0;
+  align-items: center;
+}
+#why02 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  2vw;
+  top:57vw;
+  left:73%;
+  width:25%;
+  z-index:0;
+  align-items: center;
+}
+#dance02 {
+  position:absolute;
+  top:45.2vw;
+  left:0px;
+  width:72%;
+  z-index:-3;
+  align-items: center;
+}
+
+</style>
+<div style="position:relative;">
+<img src="2BG04.png" id="BG02">
+<p id="title02">Zoom</p>
+<p id="why02">we plug in a variable resistor in unity , let camera guy can contral the zoom like a real camra.</p>
+<video loop="true" autoplay="autoplay"  muted="true" id="dance02">
+         <source type="video/mp4" src="zoom02.mp4"></source>
+</video>
+</div>
+<style type="text/css">
+#BG03{
+    position:absolute;
+    top:80.2vw;
+    left:0%;
+    width:46%;
+    z-index:-2;
+}
+#title03 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:3vw;
+  top:85vw;
+  left:5%;
+  width:30%;
+  z-index:0;
+  align-items: center;
+}
+#why03 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  2vw;
+  top:90vw;
+  left:7%;
+  width:25%;
+  z-index:0;
+  align-items: center;
+}
+#dance03 {
+  position:absolute;
+  top:80.2vw;
+  left:28%;
+  width:72%;
+  z-index:-3;
+  align-items: center;
+}
+
+</style>
+<div style="position:relative;">
+<img src="3BG01.png" id="BG03">
+<p id="title03">Depth Of Field</p>
+<p id="why03">Unity delete Depth Of Field function in 2019 camera object, so we use post processing function to make it.</p>
+<video loop="true" autoplay="autoplay"  muted="true" id="dance03">
+         <source type="video/mp4" src="focus02.mp4"></source>
+</video>
+</div>
+
+
+<style type="text/css">
+#BG04{
+    position:absolute;
+    top:115.2vw;
+    left:54%;
+    width:46%;
+    z-index:-2;
+}
+#title04 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:3vw;
+  top:122vw;
+  left:70%;
+  width:30%;
+  z-index:0;
+  align-items: center;
+}
+#why04 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  2vw;
+  top:127vw;
+  left:73%;
+  width:27%;
+  z-index:0;
+  align-items: center;
+}
+#dance04 {
+  position:absolute;
+  top:115.2vw;
+  left:0px;
+  width:72%;
+  z-index:-3;
+  align-items: center;
+}
+
+</style>
+<div style="position:relative;">
+<img src="2BG04.png" id="BG04">
+<p id="title04">YouTube Chat</p>
+<p id="why04">using YouTube live stream API v3, we can plug in the live chat in unity, it can let the audience being a part of the show.</p>
+<video loop="true" autoplay="autoplay"  muted="true" id="dance04">
+         <source type="video/mp4" src="chat01.mp4"></source>
+</video>
+
+
+<style type="text/css">
+#BG05{
+    position:absolute;
+    top:150.2vw;
+    left:0%;
+    width:46%;
+    z-index:-2;
+}
+#title05 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:3vw;
+  top:155vw;
+  left:5%;
+  width:50%;
+  z-index:0;
+  align-items: center;
+}
+#why05 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  2vw;
+  top:160vw;
+  left:7%;
+  width:33%;
+  z-index:0;
+  align-items: center;
+}
+#dance05 {
+  position:absolute;
+  top:150.2vw;
+  left:28%;
+  width:72%;
+  z-index:-3;
+  align-items: center;
+}
+
+</style>
+<div style="position:relative;">
+<img src="3BG01.png" id="BG05">
+<p id="title05">Camera Stabilizer</p>
+<p id="why05">different from the expensive stabilizer, we use a C# program to filter the shake on VIVE Controller.</p>
+<video loop="true" autoplay="autoplay"  muted="true" id="dance05">
+         <source type="video/mp4" src="stable03.mp4"></source>
+</video>
+</div>
+
+
+<style type="text/css">
+#BG06{
+    position:absolute;
+    top:185.2vw;
+    left:54%;
+    width:46%;
+    z-index:-2;
+}
+#title06 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:3vw;
+  top:192vw;
+  left:70%;
+  width:30%;
+  z-index:0;
+  align-items: center;
+}
+#why06 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  2vw;
+  top:197vw;
+  left:73%;
+  width:27%;
+  z-index:0;
+  align-items: center;
+}
+#dance06 {
+  position:absolute;
+  top:185.2vw;
+  left:0px;
+  width:72%;
+  z-index:-3;
+  align-items: center;
+}
+
+
+</style>
+<div style="position:relative;">
+<img src="2BG04.png" id="BG06">
+<p id="title06">Auto Follow</p>
+<p id="why06">when singer are moving, the camera can follow the singer automatically, we also program the move on camera to make it work smooth.</p>
+<video loop="true" autoplay="autoplay"  muted="true" id="dance06">
+         <source type="video/mp4" src="follow02.mp4"></source>
+</video>
+
+
+<style type="text/css">
+#BG07{
+    position:absolute;
+    top:220.2vw;
+    left:0%;
+    width:46%;
+    z-index:-2;
+}
+#title07 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:3vw;
+  top:225vw;
+  left:5%;
+  width:30%;
+  z-index:0;
+  align-items: center;
+}
+#why07 {
+  position:absolute;
+  color: white;
+  font-family: Arial Black;
+  font-size:  2vw;
+  top:230vw;
+  left:7%;
+  width:30%;
+  z-index:0;
+  align-items: center;
+}
+#dance07 {
+  position:absolute;
+  top:220.2vw;
+  left:28%;
+  width:72%;
+  z-index:-3;
+  align-items: center;
+}
+
+</style>
+<div style="position:relative;">
+<img src="3BG01.png" id="BG07">
+<p id="title07">Auto Focus</p>
+<p id="why07">not like the troditional AF on camera build at image recognition, we catch the position from singer's forehead, so it can work more fast and stable.</p>
+<video loop="true" autoplay="autoplay"  muted="true" id="dance07">
+         <source type="video/mp4" src="AF01.mp4"></source>
+</video>
+</div>
+
+  </body>
+</html>
