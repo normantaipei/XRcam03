@@ -23,11 +23,10 @@ public class stabalier : MonoBehaviour
     void Update()
     {
         pos = target_P.position;
-        this.transform.position = Vector3.Lerp(this.transform.position, pos, speed * Time.deltaTime);//调整相机与玩家之间的距离
-        //Quaternion angel = Quaternion.LookRotation(target_R.position - this.transform.position);//获取旋转角度
+        this.transform.position = Vector3.Lerp(this.transform.position, pos, speed * Time.deltaTime);
         Quaternion angel = Quaternion.LookRotation(this.transform.position-target_R.position);
          this.transform.rotation = Quaternion.Slerp(this.transform.rotation, angel, speed * Time.deltaTime);
-        //Debug.Log(target_R.position + offset - this.transform.position);
+
 
     }
 }
